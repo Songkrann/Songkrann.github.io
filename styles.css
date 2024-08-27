@@ -530,9 +530,7 @@ footer img {
         width: calc(50% - 20px);
     }
 
-    #category-filter {
-        width: calc(50% - 20px);
-    }
+        
 }
 
 /* Media Query สำหรับมือถือ */
@@ -548,7 +546,7 @@ footer img {
     }
 
     .product-list .product {
-        width: calc(50% - 20px); /* สองคอลัมน์บนแท็บเล็ต */
+        width: 100%; /* สองคอลัมน์บนแท็บเล็ต */
     }
 
     .product-item h2 {
@@ -556,12 +554,9 @@ footer img {
     }
 
     .contact-button {
-        width: calc(50% - 20px);
+        width: 100%;
     }
 
-    #category-filter {
-        width: calc(50% - 20px);
-    }
 }
 
 
