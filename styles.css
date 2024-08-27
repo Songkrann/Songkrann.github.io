@@ -21,10 +21,63 @@ body {
         align-items: center;
     }
 
+    .product-list .product {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: calc(33% - 2rem);
+    text-align: center;
+    animation: fadeInUp 0.5s ease-out; /* เพิ่มแอนิเมชัน */
+    opacity: 0; /* เริ่มต้นที่โปร่งใส */
+    animation-fill-mode: forwards; /* รักษาสถานะสุดท้ายของแอนิเมชัน */
+}
+
     .product-item {
         width: 90%;
         margin-bottom: 20px;
     }
+
+    #category-filter {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 2px solid black; /* กรอบ */
+    border-radius: 8px; /* มุมกรอบมน */
+    background-color:rgb(255, 252, 252); /* พื้นหลัง */
+}
+
+#category-filter h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#categories {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#categories li {
+    margin: 0 1rem;
+}
+
+#categories a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #FFD700;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid #000000; /* กรอบปุ่ม */
+    border-radius: 4px; /* มุมปุ่มมน */
+    transition: background-color 0.3s, color 0.3s; /* การเปลี่ยนสี */
+}
+
+#categories a:hover {
+    background-color: #333; /* สีพื้นหลังเมื่อวางเมาส์ */
+    color: #fff; /* สีข้อความเมื่อวางเมาส์ */
+    text-decoration: none;
+}
+
+    
 }
 
 /* Media Query สำหรับหน้าจอมือถือขนาดเล็ก */
@@ -37,9 +90,59 @@ body {
         height: 150px;
     }
 
+    .product-list .product {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: calc(33% - 2rem);
+    text-align: center;
+    animation: fadeInUp 0.5s ease-out; /* เพิ่มแอนิเมชัน */
+    opacity: 0; /* เริ่มต้นที่โปร่งใส */
+    animation-fill-mode: forwards; /* รักษาสถานะสุดท้ายของแอนิเมชัน */
+}
+
     .product-item {
         width: 100%;
     }
+    #category-filter {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 2px solid black; /* กรอบ */
+    border-radius: 8px; /* มุมกรอบมน */
+    background-color:rgb(255, 252, 252); /* พื้นหลัง */
+}
+
+#category-filter h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#categories {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#categories li {
+    margin: 0 1rem;
+}
+
+#categories a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #FFD700;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid #000000; /* กรอบปุ่ม */
+    border-radius: 4px; /* มุมปุ่มมน */
+    transition: background-color 0.3s, color 0.3s; /* การเปลี่ยนสี */
+}
+
+#categories a:hover {
+    background-color: #333; /* สีพื้นหลังเมื่อวางเมาส์ */
+    color: #fff; /* สีข้อความเมื่อวางเมาส์ */
+    text-decoration: none;
+}
 }
 
 /* Media Query สำหรับแท็บเล็ตและมือถือ */
@@ -53,6 +156,46 @@ body {
         width: 90%;
         margin: 10px auto;
     }
+    #category-filter {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 2px solid black; /* กรอบ */
+    border-radius: 8px; /* มุมกรอบมน */
+    background-color:rgb(255, 252, 252); /* พื้นหลัง */
+}
+
+#category-filter h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#categories {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#categories li {
+    margin: 0 1rem;
+}
+
+#categories a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #FFD700;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid #000000; /* กรอบปุ่ม */
+    border-radius: 4px; /* มุมปุ่มมน */
+    transition: background-color 0.3s, color 0.3s; /* การเปลี่ยนสี */
+}
+
+#categories a:hover {
+    background-color: #333; /* สีพื้นหลังเมื่อวางเมาส์ */
+    color: #fff; /* สีข้อความเมื่อวางเมาส์ */
+    text-decoration: none;
+}
 }
 
 @media (max-width: 480px) {
@@ -64,6 +207,56 @@ body {
     .product-item h2 {
         font-size: 16px;
     }
+
+    .product-list .product {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: calc(33% - 2rem);
+    text-align: center;
+    animation: fadeInUp 0.5s ease-out; /* เพิ่มแอนิเมชัน */
+    opacity: 0; /* เริ่มต้นที่โปร่งใส */
+    animation-fill-mode: forwards; /* รักษาสถานะสุดท้ายของแอนิเมชัน */
+}
+    #category-filter {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 2px solid black; /* กรอบ */
+    border-radius: 8px; /* มุมกรอบมน */
+    background-color:rgb(255, 252, 252); /* พื้นหลัง */
+}
+
+#category-filter h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#categories {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#categories li {
+    margin: 0 1rem;
+}
+
+#categories a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #FFD700;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid #000000; /* กรอบปุ่ม */
+    border-radius: 4px; /* มุมปุ่มมน */
+    transition: background-color 0.3s, color 0.3s; /* การเปลี่ยนสี */
+}
+
+#categories a:hover {
+    background-color: #333; /* สีพื้นหลังเมื่อวางเมาส์ */
+    color: #fff; /* สีข้อความเมื่อวางเมาส์ */
+    text-decoration: none;
+}
 }
 
 header {
