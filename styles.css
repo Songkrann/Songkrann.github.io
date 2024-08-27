@@ -111,7 +111,7 @@ main {
 }
 
 .product img {
-    width: calc(100% - 1rem)    ; /* ให้รูปภาพไม่เกินขอบของกรอบ */
+    width: 19vw ; /* ให้รูปภาพไม่เกินขอบของกรอบ */
     height: auto; /* รักษาสัดส่วนของรูปภาพ */
     border-radius: 5px; /* ปรับมุมของรูปภาพให้โค้งมนเล็กน้อย */
     transition: transform 0.3s ease; /* เพิ่ม transition สำหรับอนิเมชันของรูปภาพ */
@@ -512,6 +512,57 @@ footer img {
     transform: rotate(360deg); /* หมุนไอคอน */
 }
 
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item {
+        width: calc(50% - 20px); /* สองคอลัมน์บนแท็บเล็ต */
+    }
+
+    .product-list .product {
+        width: calc(50% - 20px); /* สองคอลัมน์บนแท็บเล็ต */
+    }
+
+    .contact-button {
+        width: calc(50% - 20px);
+    }
+
+    #category-filter {
+        width: calc(50% - 20px);
+    }
+}
+
+/* Media Query สำหรับมือถือ */
+@media (max-width: 480px) {
+    .navbar a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .product-item {
+        width: 100%; /* หนึ่งคอลัมน์บนมือถือ */
+        margin: 10px auto; /* จัดให้อยู่ตรงกลาง */
+    }
+
+    .product-list .product {
+        width: calc(50% - 20px); /* สองคอลัมน์บนแท็บเล็ต */
+    }
+
+    .product-item h2 {
+        font-size: 16px;
+    }
+
+    .contact-button {
+        width: calc(50% - 20px);
+    }
+
+    #category-filter {
+        width: calc(50% - 20px);
+    }
+}
 
 
 
