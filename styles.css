@@ -360,16 +360,17 @@ footer img {
 
 #categories a {
     text-decoration: none;
-    color: #007bff;
+    color: #FFFFFF;
+    background-color: #FFD700;
     font-weight: bold;
     padding: 0.5rem 1rem;
-    border: 2px solid #007bff; /* กรอบปุ่ม */
+    border: 2px solid #000000; /* กรอบปุ่ม */
     border-radius: 4px; /* มุมปุ่มมน */
     transition: background-color 0.3s, color 0.3s; /* การเปลี่ยนสี */
 }
 
 #categories a:hover {
-    background-color: #007bff; /* สีพื้นหลังเมื่อวางเมาส์ */
+    background-color: #333; /* สีพื้นหลังเมื่อวางเมาส์ */
     color: #fff; /* สีข้อความเมื่อวางเมาส์ */
     text-decoration: none;
 }
