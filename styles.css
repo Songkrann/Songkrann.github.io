@@ -53,7 +53,9 @@ main {
     }
 }
 
-img {
+img {    
+    overflow-clip-margin: content-box;
+    overflow: clip;
     width: 1200px; /* ให้รูปภาพไม่เกินขอบของกรอบ */
     height: auto;
 }
