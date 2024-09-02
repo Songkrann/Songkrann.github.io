@@ -53,6 +53,11 @@ main {
     }
 }
 
+img {
+    width: 1200px; /* ให้รูปภาพไม่เกินขอบของกรอบ */
+    height: auto;
+}
+
 #home-banner {
     background-color: rgb(211, 205, 205);
     padding: 2rem;
